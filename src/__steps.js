@@ -49,5 +49,6 @@ const handleRemoveItemFromCart = tshirts => {
 
 /* 
 Conditional Rendering Steps and Methods>>>>
-1. use element in a variable and the use if-else to set the value
+1. use element in a variable and the use if-else to set the value.
+2. using ternary operator 'condition ? true value : false value.
 */

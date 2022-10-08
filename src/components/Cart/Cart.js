@@ -1,16 +1,19 @@
 import React from 'react';
 
 const Cart = ({ cart, handleRemoveItemFromCart }) => {
-    //conditional message rendering
-    let meassage;
+    //conditional messege rendering
+    let message;
     if (cart.length === 0) {
-        meassage = <h5>Please buy something!!!</h5>
+        message = <h5>Please buy something!!!</h5>
     }
     else if (cart.length === 1) {
-        meassage = <h4>Forgot your loved one??? <br /> <br /> Buy another now!!!</h4>
+        message = <h4>Forgot your loved one??? <br /> <br /> Buy another now!!!</h4>
+    }
+    else if (cart.length === 2) {
+        message = <h6>only for you!!</h6>
     }
     else {
-        meassage = <h6>Thanks for buying!!</h6>
+        message = <h6>Thanks for buying!!!</h6>
     }
 
 
@@ -26,7 +29,9 @@ const Cart = ({ cart, handleRemoveItemFromCart }) => {
                     <button onClick={() => handleRemoveItemFromCart(tshirt)} style={{ marginLeft: 5 }}>X</button>
                 </p>)
             }
-            {meassage}
+            {message}
+            {/* conditional rendering by ternary operator */}
+            {cart.length === 2 ? <p>Next one is 20% less!!!</p> : <p></p>}
         </div>
     );
 };
