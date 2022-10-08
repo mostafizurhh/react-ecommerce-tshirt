@@ -46,3 +46,8 @@ const handleRemoveItemFromCart = tshirts => {
     }
 10. send above function as props from Home.js's Cart component then receive that in Cart.js and add the function inside the X button.
 */
+
+/* 
+Conditional Rendering Steps and Methods>>>>
+1. use element in a variable and the use if-else to set the value
+*/
