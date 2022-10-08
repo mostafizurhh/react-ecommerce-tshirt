@@ -48,9 +48,15 @@ const handleRemoveItemFromCart = tshirts => {
 */
 
 /* 
-Conditional Rendering Steps and Methods>>>>
+Conditional Rendering Methods>>>>
 1. use element in a variable and the use if-else to set the value.
 2. using ternary operator 'condition ? true value : false value.
 3. using && operator (if condition is true, display something).
 4. using || operator (if condition is false, display something).
+*/
+
+/* 
+Conditional rendering for CSS class>>>>
+<h2 className={`italic ${cart.length === 2 ? 'purple' : 'blue'}`}>Order Summary</h2>
+<h6 className={cart.length === 1 ? 'sky' : 'green'}>Order Quantity:{cart.length}</h6>
 */

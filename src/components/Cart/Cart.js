@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css'
 
 const Cart = ({ cart, handleRemoveItemFromCart }) => {
     //conditional messege rendering
@@ -22,8 +23,9 @@ const Cart = ({ cart, handleRemoveItemFromCart }) => {
 
     return (
         <div>
-            <h2>Order Summary</h2>
-            <h6>Order Quantity:{cart.length}</h6>
+            {/* conditional CSS class rendering */}
+            <h2 className={`italic ${cart.length === 2 ? 'purple' : 'blue'}`}>Order Summary</h2>
+            <h6 className={cart.length === 1 ? 'sky' : 'green'}>Order Quantity:{cart.length}</h6>
             {
                 cart.map(tshirt => <p
                     key={tshirt.id}
