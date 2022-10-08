@@ -1,7 +1,7 @@
 import React from 'react';
 import './Tshirt.css'
 
-const Tshirt = ({ tshirt }) => {
+const Tshirt = ({ tshirt, handleAddToCart }) => {
     const { picture, name, id, price, gender } = tshirt
     return (
         <div className='tshirt'>
@@ -11,7 +11,7 @@ const Tshirt = ({ tshirt }) => {
             <h6>{name}</h6>
             <p><small>Price: ${price}</small></p>
             <p><small>Gender: {gender}</small></p>
-            <button style={{ marginTop: 10 }}>Add To Cart</button>
+            <button onClick={() => handleAddToCart(tshirt)} style={{ marginTop: 10 }}>Add To Cart</button>
         </div>
     );
 };
