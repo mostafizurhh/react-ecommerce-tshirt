@@ -1,0 +1,13 @@
+.nav-bar a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+}
+
+.nav-bar {
+    margin-top: 10px;
+}
+
+.active {
+    background-color: burlywood;
+}
