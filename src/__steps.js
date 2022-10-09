@@ -69,3 +69,9 @@ Context API using steps>>>
 2. set provider with value
 3. useContext in the place where you want to get the context
  */
+
+/* 
+Solve React Router (Page Not Found 404) Issue >>>>
+1. create _redirects file under public folder and write '/* /index.html 200'
+2. npm run build
+*/
