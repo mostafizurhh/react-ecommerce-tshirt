@@ -1,0 +1,8 @@
+.am2 {
+    border: 1px solid red;
+}
+
+.under2 {
+    display: flex;
+    justify-content: space-around;
+}

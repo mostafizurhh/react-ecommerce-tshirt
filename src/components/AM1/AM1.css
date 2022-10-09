@@ -1,0 +1,8 @@
+.am1 {
+    border: 1px solid coral;
+}
+
+.under {
+    display: flex;
+    justify-content: space-around;
+}

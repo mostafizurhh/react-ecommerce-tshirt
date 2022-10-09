@@ -60,3 +60,12 @@ Conditional rendering for CSS class>>>>
 <h2 className={`italic ${cart.length === 2 ? 'purple' : 'blue'}`}>Order Summary</h2>
 <h6 className={cart.length === 1 ? 'sky' : 'green'}>Order Quantity:{cart.length}</h6>
 */
+
+/* 
+if you want to send something as props from a component to another lower level component automatically then you need to use context API.
+
+Context API using steps>>>
+1. declare a context (const MyContext = createContext('initial value'))
+2. set provider with value
+3. useContext in the place where you want to get the context
+ */

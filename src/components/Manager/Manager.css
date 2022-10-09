@@ -1,0 +1,8 @@
+.manager {
+    border: 1px solid brown;
+}
+
+.am {
+    display: flex;
+    justify-content: space-around;
+}
